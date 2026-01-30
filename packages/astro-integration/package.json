@@ -43,7 +43,16 @@
     "font",
     "subset",
     "optimization",
-    "astro"
+    "astro",
+    "astro-integration",
+    "withastro",
+    "astro",
+    "font",
+    "subset",
+    "fonts",
+    "optimization",
+    "performance",
+    "perf"
   ],
   "license": "MIT"
 }
