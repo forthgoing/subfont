@@ -1,0 +1,49 @@
+{
+  "name": "@forthgoing/subfont",
+  "version": "0.1.0",
+  "description": "Astro integration that subsets your font files so you get significantly smaller font sizes and faster loading speeds",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "scripts"
+  ],
+  "scripts": {
+    "build": "tsc"  },
+  "dependencies": {
+    "jiti": "^2.6.1"
+  },
+  "optionalDependencies": {
+    "@forthgoing/subfont-darwin-arm64": "^0.1.0",
+    "@forthgoing/subfont-darwin-x64": "^0.1.0",
+    "@forthgoing/subfont-linux-musl": "^0.1.0",
+    "@forthgoing/subfont-linux-x64": "^0.1.0",
+    "@forthgoing/subfont-win32-x64": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "astro": "^5.16.15",
+    "typescript": "^5.5.0",
+    "vite": "^5.0.0"
+  },
+  "peerDependencies": {
+    "vite": "^5.0.0"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "font",
+    "subset",
+    "optimization",
+    "astro"
+  ],
+  "license": "MIT"
+}

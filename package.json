@@ -1,0 +1,12 @@
+{
+  "name": "subfont-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/core",
+    "packages/astro-integration"
+  ],
+  "scripts": {
+    "build": "npm run build -w packages/astro-integration",
+    "build:rust": "cd packages/core && cargo build --release"
+  }
+}
