@@ -10,24 +10,24 @@ jobs:
         include:
           - os: ubuntu-latest
             target: x86_64-unknown-linux-gnu
-            pkg: subfont-bin-linux-x64
+            pkg: subfont-linux-x64
             exe: false
           - os: ubuntu-latest
             target: x86_64-unknown-linux-musl
-            pkg: subfont-bin-linux-musl
+            pkg: subfont-linux-musl
             exe: false
             use_zig: true
           - os: macos-latest
             target: aarch64-apple-darwin
-            pkg: subfont-bin-darwin-arm64
+            pkg: subfont-darwin-arm64
             exe: false
           - os: macos-latest
             target: x86_64-apple-darwin
-            pkg: subfont-bin-darwin-x64
+            pkg: subfont-darwin-x64
             exe: false
           - os: windows-latest
             target: x86_64-pc-windows-msvc
-            pkg: subfont-bin-win32-x64
+            pkg: subfont-win32-x64
             exe: true
     runs-on: ${{ matrix.os }}
     defaults:
