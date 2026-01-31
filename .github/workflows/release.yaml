@@ -77,6 +77,7 @@ jobs:
           path: temp-artifacts
       - name: Publish Binary Packages
         run: |
+          set -e
           for pkg in subfont-linux-x64 subfont-linux-musl subfont-darwin-arm64 subfont-darwin-x64 subfont-win32-x64; do
             echo "Processing $pkg..."
             mkdir -p subfont-binaries/packages/$pkg/bin
@@ -89,7 +90,7 @@ jobs:
             fi
             
             cd subfont-binaries/packages/$pkg
-            npm publish --access public --userconfig $NPM_CONFIG_USERCONFIG || echo "$pkg already published"
+            npm publish --access public --userconfig $NPM_CONFIG_USERCONFIG
             cd ../../..
           done
         env:
