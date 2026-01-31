@@ -77,11 +77,11 @@ jobs:
           path: temp-artifacts
       - name: Publish Binary Packages
         run: |
-          for pkg in subfont-bin-linux-x64 subfont-bin-linux-musl subfont-bin-darwin-arm64 subfont-bin-darwin-x64 subfont-bin-win32-x64; do
+          for pkg in subfont-linux-x64 subfont-linux-musl subfont-darwin-arm64 subfont-darwin-x64 subfont-win32-x64; do
             echo "Processing $pkg..."
             mkdir -p subfont-binaries/packages/$pkg/bin
             
-            if [ "$pkg" = "subfont-bin-win32-x64" ]; then
+            if [ "$pkg" = "subfont-win32-x64" ]; then
               cp temp-artifacts/$pkg/subfont-core.exe subfont-binaries/packages/$pkg/bin/
             else
               cp temp-artifacts/$pkg/subfont-core subfont-binaries/packages/$pkg/bin/
