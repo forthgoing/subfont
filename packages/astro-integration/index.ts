@@ -67,8 +67,8 @@ function getBinaryPath(): string {
   }
 
   const subPkg = isMusl
-    ? `@forthgoing/subfont-linux-musl`
-    : `@forthgoing/subfont-${platform}-${arch}`;
+    ? `@forthgoing/subfont-bin-linux-musl`
+    : `@forthgoing/subfont-bin-${platform}-${arch}`;
 
   try {
     return require.resolve(`${subPkg}/bin/${binName}`);

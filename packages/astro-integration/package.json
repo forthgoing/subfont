@@ -1,6 +1,6 @@
 {
   "name": "@forthgoing/subfont",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Astro integration that subsets your font files so you get significantly smaller font sizes and faster loading speeds",
   "type": "module",
   "main": "./dist/index.js",
@@ -22,11 +22,11 @@
     "jiti": "^2.6.1"
   },
   "optionalDependencies": {
-    "@forthgoing/subfont-bin-darwin-arm64": "^0.1.1",
-    "@forthgoing/subfont-bin-darwin-x64": "^0.1.1",
-    "@forthgoing/subfont-bin-linux-musl": "^0.1.1",
-    "@forthgoing/subfont-bin-linux-x64": "^0.1.1",
-    "@forthgoing/subfont-bin-win32-x64": "^0.1.1"
+    "@forthgoing/subfont-bin-darwin-arm64": "^0.1.2",
+    "@forthgoing/subfont-bin-darwin-x64": "^0.1.2",
+    "@forthgoing/subfont-bin-linux-musl": "^0.1.2",
+    "@forthgoing/subfont-bin-linux-x64": "^0.1.2",
+    "@forthgoing/subfont-bin-win32-x64": "^0.1.2"
   },
   "devDependencies": {
     "@types/node": "^25.0.10",
