@@ -22,11 +22,11 @@
     "jiti": "^2.6.1"
   },
   "optionalDependencies": {
-    "@forthgoing/subfont-darwin-arm64": "^0.1.0",
-    "@forthgoing/subfont-darwin-x64": "^0.1.0",
-    "@forthgoing/subfont-linux-musl": "^0.1.0",
-    "@forthgoing/subfont-linux-x64": "^0.1.0",
-    "@forthgoing/subfont-win32-x64": "^0.1.0"
+    "@forthgoing/subfont-bin-darwin-arm64": "^0.1.0",
+    "@forthgoing/subfont-bin-darwin-x64": "^0.1.0",
+    "@forthgoing/subfont-bin-linux-musl": "^0.1.0",
+    "@forthgoing/subfont-bin-linux-x64": "^0.1.0",
+    "@forthgoing/subfont-bin-win32-x64": "^0.1.0"
   },
   "devDependencies": {
     "@types/node": "^25.0.10",
